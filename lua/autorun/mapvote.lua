@@ -9,7 +9,8 @@ MapVoteConfigDefault = {
     EnableCooldown = true,
     MapsBeforeRevote = 3,
     RTVPlayerCount = 3,
-    MapPrefixes = {"ttt_"},
+    MapPrefixes = {"br_"},
+	MapPrefixes = {"gm_"},
     AutoGamemode = false
 }
 --Default Config
