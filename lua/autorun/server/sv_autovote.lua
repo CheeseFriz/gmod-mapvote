@@ -23,10 +23,18 @@ hook.Add( "Initialize", "AutoTTTMapVote", function()
         end
       end
       
-      if GAMEMODE_NAME == "deathrun" then
-          function RTV.Start()
-            MapVote.Start(nil, nil, nil, nil)
-          end
+      if GAMEMODE_NAME == "breach" then
+        int brRoundValue
+                  
+         if roundEnd == true then -- if round will be end
+            switchmap = true
+               brRoundValue + 1
+         end            
+           if brRoundValue == 10 then
+            function RTV.Start()
+               MapVote.Start(nil, nil, nil, nil)
+
+           end
       end
       
       if GAMEMODE_NAME == "zombiesurvival" then
