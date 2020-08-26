@@ -25,11 +25,11 @@ function RTV.RemoveVote()
 end
 
 function RTV.Start()
-			if GAMEMODE_NAME == "terrortown" then
+			if GAMEMODE_NAME == "breach" then
 				net.Start("RTV_Delay")
         		net.Broadcast()
  
-				hook.Add("TTTEndRound", "MapvoteDelayed", function()
+				hook.Add("roundEnd", "MapvoteDelayed", function()
 					MapVote.Start(nil, nil, nil, nil)
 				end)
 			elseif GAMEMODE_NAME == "deathrun" then
